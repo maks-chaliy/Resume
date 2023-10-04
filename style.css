@@ -2,18 +2,19 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 900;
-    background-color: #5f615e;
+    background-color: #adb8da;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #3b3e3a;
+    background-color: #adb8da;
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 1);
     padding: 20px;
 }
 
 .h1 {
-    color: rgb(163, 219, 43);
+    font-size: 34px;
 }
 
 .info {
@@ -35,8 +36,27 @@ body {
     max-width: 100%;
     text-align: center;
 }
+
 .info__text p {
-    color: #eee;
+    color: #575555;
+}
+
+.social {
+    text-decoration: none;
+    color: #291bf6;
+    background-color: #999a9d;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s linear;
+}
+
+.social:hover {
+    background-color: #c6c6db;
+}
+
+.social:first-child {
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 .card {
@@ -46,8 +66,13 @@ body {
     margin-bottom: 20px;
     position: relative;
 }
+
+.card h3 {
+    text-align: center;
+}
+
 .card-hobby {
-    background-color: #35507b;
+    background-color: #dfe1dd;
 }
 
 .card::before {
@@ -55,7 +80,7 @@ body {
     display: block;
     width: 10px;
     height: 100%;
-    background-color: azure;
+    background-color: #f4995c;
     position: absolute;
     left: 0;
     top: 0;
@@ -63,16 +88,27 @@ body {
 }
 
 .card-work {
-    background-color: #31bb8d;
+    background-color: #999a9d;
 }
 
 .card-contact {
-    background-color: #4aed6b;
+    background-color: #62646c;
 }
 
 .btn {
     cursor: pointer;
     border: none;
+    text-decoration: none;
+    color: #291bf6;
+    background-color: #999a9d;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s linear;
+    font-weight: 900;
+}
+
+.btn:hover {
+    background-color: #c6c6db;
 }
 
 .list {
@@ -80,15 +116,43 @@ body {
 }
 
 .list li {
-    padding: 0;
-    margin: 0;
+    padding: 10px 0;
+}
+
+.table {
+    width: 100%;
+}
+
+.table tbody td {
+    padding: 10px 0;
+}
+
+.form {
+    width: 100%;
+}
+
+.form__block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__block label, .form__block input, .form__block textarea {
+    width: 100%;
+}
+
+.form__block input, .form__block textarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    outline: 0;
+    border: 0;
 }
 
 .footer {
     height: 100px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
     .info {
         flex-direction: column;
     }
