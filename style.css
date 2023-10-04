@@ -1,0 +1,95 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #5f615e;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #3b3e3a;
+    padding: 20px;
+}
+
+.h1 {
+    color: rgb(163, 219, 43);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info__img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+.info__img img {
+    border-radius: 15px;
+    box-shadow: 6px 6px 14px rgba(254, 254, 254, 0.45);
+}
+
+.info__text {
+    /* max-width: 750px; */
+    max-width: 100%;
+    text-align: center;
+}
+.info__text p {
+    color: #eee;
+}
+
+.card {
+    max-width: 450px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.card-hobby {
+    background-color: #35507b;
+}
+
+.card::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 100%;
+    background-color: azure;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.card-work {
+    background-color: #31bb8d;
+}
+
+.card-contact {
+    background-color: #4aed6b;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    height: 100px;
+}
+
+@media (max-width: 425px) {
+    .info {
+        flex-direction: column;
+    }
+}
